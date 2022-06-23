@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>slider</title>
+  </head>
+  <body>
+    <h1>slider</h1>
+    <div class="main-container">
+      <div class="slider-container tile">
+        <input
+          type="range"
+          min="-50"
+          max="50"
+          value="0"
+          id="temp-slider-el"
+          class="temp-slider"
+        />
+        <h2 class="temp-100">-50</h2>
+        <h2 class="temp0">0</h2>
+        <h2 class="temp100">50</h2>
+      </div>
+      <div class="temp-c-container tile">
+        <h1>
+          current temp <br />
+          <input type="text" placeholder="0" id="current-temp-el" /> c
+        </h1>
+      </div>
+      <div class="temp-f-container tile">
+        <h1>
+          current temp <br />
+          <input type="text" placeholder="0" id="current-temp-f-el" /> f
+        </h1>
+      </div>
+      <div class="location-input tile">
+        <h1>location</h1>
+      </div>
+    </div>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200;1,400&display=swap');
+      </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>PGrigg Weather App/Converter</title>
+  </head>
+
+  <body>
+    </div>
+    <!----- main-container ----->
+    <div class="main-container">
+      <!-- slide -->
+      <div class="slider-container tile">
+        <img class="temp-slider-scale-img" src="./img/temp-scale.svg" alt="">
+        <input
+          type="range"
+          min="-40"
+          max="50"
+          value="0"
+          id="temp-slider-el"
+          class="temp-slider"
+        />
+      </div>
+      <!-- current temp -->
+      <div class="current-temp-text tile">
+        <h2>Current Temp:</h2>
+      </div>
+      <!-- temp c -->
+      <div class="temp-c-container tile">
+        <h1 class="current-temp-text">
+          <input type="text" placeholder="0" class="current-temp" id="current-temp-el" /> &#176;C
+        </h1>
+      </div>
+      <!-- temp f -->
+      <div class="temp-f-container tile">
+        <h1 class="current-temp-f-text">
+          <input type="text" placeholder="0" class="current-temp-f" id="current-temp-f-el" /> &#176;F
+        </h1>
+      </div>
+      <!-- location input -->
+      <div class="location-input tile">
+        <h1 class="weather-app-converter-text" id="location-el">weather app/converter </h1>
+        <img id="icon-el" src="" alt="">
+        <h4 class="weather-enter-text">enter location for weather</h4>
+        <form id="form-el" class="change-location">
+          <input type="text" name="city" class="change-location-from" />
+        </form>
+      </div>
+    </div>
+    <!----- end of main-container ----->
+    <script src="./js/forecast.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.1em;
+  font-size: 0.01rem;
+  background-color: rgb(251, 249, 253);
+  min-width: 520px;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: rgba(79, 202, 255, 0.702);
+}
+
+/* ----- main container ----- */
+.main-container {
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-areas:
+    "l l l l t"
+    "l l l l c"
+    "l l l l f"
+    "s s s s s";
+  margin-top: 0;
+  font-family: "Roboto Mono", monospace;
+  margin: 1px;
+}
+/* tiles */
+.tile {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  /* margin: 0.1rem; */
+  /* border: black solid 1px; */
+}
+/* location tile */
+.change-location {
+  width: 20rem;
+  height: 10rem;
+}
+
+.change-location-from {
+  width: 14rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+
+.temp-info {
+  background-color: white;
+  padding: 1rem;
+}
+
+.icon {
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: -50px;
+  background-color: rgb(238, 237, 236);
+}
+
+/* temp slider  */
+
+.slider-container {
+  width: 100%;
+}
+
+.temp-slider {
+  width: 100%;
+  transform: translate(-0.1%, -520%);
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate(-0.1%, -520%);
+  -moz-transform: translate(-0.1%, -520%);
+  -ms-transform: translate(-0.1%, -520%);
+  -o-transform: translate(-0.1%, -520%);
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: rgb(79, 202, 255);
+  outline: none;
+}
+
+.temp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 22px;
+  background: rgb(128, 128, 128);
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+temp-slider::-webkit-slider-thumb:hover {
+  background: rgb(86, 195, 75);
+}
+
+.temp-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.temp-slider-scale-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  grid-area: s;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-top: black solid 1px;
+}
+
+.slider-container:hover {
+  background-color: rgba(189, 255, 255, 0.102);
+}
+
+/* current temp tile */
+
+.current-temp-text {
+  font-size: 1.6rem;
+  grid-area: t;
+  /* border-top-right-radius: 10px; */
+}
+
+.current-temp-text:hover {
+  background-color: rgba(189, 255, 255, 0.102);
+}
+
+/* temp c tile */
+.temp-c-container {
+  grid-area: c;
+  border-top: rgb(128, 128, 128) solid 1px;
+}
+
+.temp-c-container:hover {
+  background-color: rgba(189, 255, 255, 0.102);
+}
+
+.current-temp-text {
+  font-size: 1.2rem;
+}
+
+/* temp f tile */
+.temp-f-container {
+  grid-area: f;
+  border-top: rgb(128, 128, 128) solid 1px;
+}
+
+.temp-f-container:hover {
+  background-color: rgba(189, 255, 255, 0.102);
+}
+
+.current-temp-f-text {
+  font-size: 1.2rem;
+}
+
+.current-temp,
+.current-temp-f {
+  width: 5rem;
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+
+/* location tile */
+
+.location-input {
+  grid-area: l;
+  /* border-top-left-radius: 10px; */
+  min-width: 23rem;
+  min-height: 22rem;
+  border-right: rgb(128, 128, 128) solid 1px;
+}
+
+.location-input:hover {
+  background-color: rgba(189, 255, 255, 0.102);
+}
+
+.weather-app-converter-text {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.weather-enter-text {
+  font-size: 0.8rem;
+  color: gray;
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
